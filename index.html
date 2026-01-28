@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Counter Voting OSIS</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Perhitungan Suara Ketua OSIS</h1>
+    <p class="subtitle">SMP Tunas Dharma</p>
+
+    <div class="container">
+      <!-- Kandidat 1 -->
+      <div class="card">
+        <img src="img/kandidat1.jpg" />
+        <h2>Kandidat 01</h2>
+        <h3>Sebastian Aprilio S</h3>
+        <div class="counter" id="count1">0</div>
+        <div class="btn-group">
+          <button onclick="addVote(1)">+ Tambah</button>
+          <button class="minus" onclick="minusVote(1)">- Kurangi</button>
+        </div>
+      </div>
+
+      <!-- Kandidat 2 -->
+      <div class="card">
+        <img src="img/kandidat2.jpg" />
+        <h2>Kandidat 02</h2>
+        <h3>Nama Kandidat 2</h3>
+        <div class="counter" id="count2">0</div>
+        <div class="btn-group">
+          <button onclick="addVote(2)">+ Tambah</button>
+          <button class="minus" onclick="minusVote(2)">- Kurangi</button>
+        </div>
+      </div>
+
+      <!-- Kandidat 3 -->
+      <div class="card">
+        <img src="img/kandidat3.jpg" />
+        <h2>Kandidat 03</h2>
+        <h3>Nama Kandidat 3</h3>
+        <div class="counter" id="count3">0</div>
+        <div class="btn-group">
+          <button onclick="addVote(3)">+ Tambah</button>
+          <button class="minus" onclick="minusVote(3)">- Kurangi</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="total">Total Suara: <span id="totalVote">0</span></div>
+    <div>
+      <button onclick="document.documentElement.requestFullscreen()">
+        Mode Layar Penuh
+      </button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
